@@ -9,9 +9,8 @@ config = {
   "storageBucket": "y2-1st-project.appspot.com",
   "messagingSenderId": "903066802788",
   "appId": "1:903066802788:web:00f5c5078acfe865e49d71",
-  "measurementId": "G-KSKF1GJJT6"
-  "databaseURL": "https://y2-1st-project-default-rtdb.europe-west1.firebasedatabase.app"
-}
+  "measurementId": "G-KSKF1GJJT6",
+  "databaseURL": "https://y2-1st-project-default-rtdb.europe-west1.firebasedatabase.app"}
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
@@ -33,7 +32,7 @@ def signin():
 			return redirect(url_for('add_tweet'))
 		except:
 			error = "Authentication failed"
-			return redirect(url_for("signin.html"))
+			return redirect(url_for("signin"))
 	else:
 		return render_template("signin.html")
 
