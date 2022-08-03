@@ -8,12 +8,22 @@
     </title>
 </head>
 <body>
-	<h1 id="h1home">Welcome To Your Home Page</h1>
+	<h1 id="h1home">Welcome To Your Note Page</h1>
 	<br>
 	<br>
-	<a href="/add_tweet"><button class="button1">add your Tweet</button></a>
+	<a href="/add_tweet"><button class="button1h">add your note</button></a>
 	<br>
 	<br>
-	<a href="/tweets"><button class="button2">See Your Tweets</button></a>
+	<a href="/tweets"><button class="button2h">See All Notes</button></a>
+<br> <br> <br> <br> <br> <br>
+	{% for tweet in tweets %}
+	{% if tweets[tweet]['uid'] == user%}
+	<div class="tweetsdis">
+ 	<h4> {{tweets[tweet]["title"]}} </h4>
+ 	<p> {{tweets[tweet]["bio"]}} </p>
+ 	</div>
+ 	<br>
+ 	{%endif%}
+	{%endfor%}
 </body>
 </html>

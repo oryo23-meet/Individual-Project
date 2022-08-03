@@ -15,8 +15,39 @@ body {
   font-size: 16px;
 }
 
+/*add your tweet home*/
+.button1h {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  background-color: #6969B3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 /*see your tweets*/
 .button2 {
+  left: 45%;
+  width: 10%;
+  top:200px;
+  background-color: #4B244A; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*see your tweets home*/
+.button2h {
+  position: absolute;
   left: 45%;
   width: 10%;
   top:200px;

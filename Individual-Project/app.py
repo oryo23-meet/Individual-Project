@@ -78,7 +78,8 @@ def all_tweet():
 @app.route('/home', methods=['GET', 'POST'])
 def home():
 	error = ""
-	return render_template("home.html")
+	data = db.child("articles").get().val()
+	return render_template("home.html", tweets = data, user = login_session['user']['localId'])
 
 
 #Code goes above here
