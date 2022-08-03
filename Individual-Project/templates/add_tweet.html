@@ -9,13 +9,15 @@
 <br>
 <div id="h1home">
     <!-- Great Job! -->
-    <h2>Add Your Tweet</h2>
+    <h2>Add Your Note</h2>
 	<form method="POST" action="/add_tweet">
 		<div>
-			<input type="text"  name="title">
+			<label for="title">title:</label>
+			<input type="text" id="title" name="title">
 		</div>
 		<div>
-			<input type="text"  name="bio" maxlength="280">
+			<label for="text">text:</label>
+			<input type="text" id="text" name="bio" maxlength="280">
 		</div>
 		<div class="centered">
 			<input class="button8" type="submit" value="Submit"/>

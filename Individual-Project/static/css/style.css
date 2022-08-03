@@ -110,10 +110,9 @@ body {
 
 /*signinup*/
 .button6 {
-  position: absolute;
   left: 45%;
   width: 10%;
-  top:370px;
+  top:350px;
   background-color: #7E5290; 
   border: none;
   color: white;
@@ -126,7 +125,6 @@ body {
 
 /*signupup*/
 .button7 {
-  position: absolute;
   left: 45%;
   width: 10%;
   top:310px;
@@ -157,14 +155,18 @@ body {
 
 .centered {
   text-align: center;
+  font-family: Cursive, Brush Script MT;
 }
 
 
 #h1home {
   text-align: center;
+  font-family: Cursive, Brush Script MT;
 }
 
 .tweetsdis {
-  border: 3px solid #73AD21;
+  border: 3px;
+  border-style: solid;
+  border-color: #E3CBEC;
   /*position: relative;*/
 }
