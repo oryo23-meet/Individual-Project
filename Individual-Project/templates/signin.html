@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./static/css/style.css">
     <meta charset="UTF-8">
     <title>Signin</title>
 </head>
 <body>
-    <form method="POST" action="/">
-        <!-- Heading -->
-        <h4>
-        Log in to your account
-        </h4>
+<div id="h1home">   
+	    <form method="POST" action="/">
 
-        <!-- Subheading -->
-        <p >
-        Please fill up your information below to sign in.
-        </p>
+	        <!-- Heading -->
+	        <h4>
+	        Log in to your account
+	        </h4>
 
-        <!-- Email -->
-        <div>
-            <label>Email address*</label>
-            <div>
-                <input type="email"  name="email" id="emailStr" required>
-            </div>
-        </div>
+	        <!-- Subheading -->
+	        <p >
+	        Please fill up your information below to sign in.
+	        </p>
 
-        <!-- Password -->
-        <div>
-            <label>Password*</label>
-            <div class="input-group">
-                <input type="password"  name="password" minlength="6">
-            </div>
-        </div>
-        
-        <div>
-         <input type="submit"/>
-        </div>
-    </form>
+	        <!-- Email -->
+	        <div>
+	            <label>Email address*</label>
+	            <div>
+	                <input type="email"  name="email" id="emailStr" required>
+	            </div>
+	        </div>
+
+	        <!-- Password -->
+	        <div>
+	            <label>Password*</label>
+	            <div class="input-group">
+	                <input type="password"  name="password" minlength="6">
+	            </div>
+	        </div>
+	        
+	        <div>
+	         <input class="button5" type="submit" value="Signin">
+	        </div>
+	    </form>
+    </div> 
     <br>
-    <a href="/signup"><button>signup</button></a>
+    <a href="/signup"><button class="button4">Signup</button></a>
 </body>
 </html>

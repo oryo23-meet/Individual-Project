@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./static/css/style.css">
     <meta charset="UTF-8">
     <title>Signup</title>
 </head>
 <body>
+	<!--
     <form method="POST" action="/signup">
-        <!-- Heading -->
-        <h4>
-            Create an account
-        </h4>
-
-        <!-- Subheading -->
-        <p >
-            Please fill up your information below to sign up.
-        </p>
-
-        <!-- Email -->
-        <div>
+    	<div>
             <label>Email address*</label>
             <div>
-                <input type="email"  name="email" id="emailStr" required>
+                <input type="email"  name="email" id="emailStr">
             </div>
-        </div>
-
-        <!-- Password -->
+        </div>     
         <div>
             <label>Password*</label>
             <div class="input-group">
@@ -34,30 +23,59 @@
              <div>
             <label>full_name*</label>
             <div>
-                <input type="full_name"  name="full_name">
+                <input type="text"  name="full_name">
             </div>
+            
             <div>
             <label>user_name*</label>
             <div>
-                <input type="user_name"  name="user_name">
+                <input type="text"  name="user_name">
             </div>
             <div>
             <label>bio*</label>
             <div>
-                <input type="bio"  name="bio" maxlength="280">
+                <input type="text"  name="bio" maxlength="280">
             </div>
-
-
-
-
         </div>
-        
-        <!-- Button -->
         <div>
             <input type="submit"/>
         </div>
-    </form>
-    <br>
-    <a href="/"><button>signin</button></a>
+    </form> 
+    
+<form action="/signup"> 
+	<label for="fname">First name:</label><br> 
+	<input type="text" id="fname" name="fname" value="John"><br> 
+	<label for="lname">Last name:</label><br> 
+	<input type="text" id="lname" name="lname" value="Doe"><br><br>
+	 <input type="submit" value="Submit"> 
+</form>-->
+	<div id="h1home">
+        <form  method="POST" action="/signup"> 
+        	<h4>
+            Create an account
+        </h4>
+        <p >
+            Please fill up your information below to sign up.
+        </p>
+        	<label for="email">Email:</label><br> 
+        	<input type="email" id="email" pattern=".+@.+\.com" name="email" required><br> 
+
+        	<label for="password">password:</label><br> 
+        	<input type="password" id="password" name="password" minlength="6" required><br>
+
+			<label for="uname">user name:</label><br> 
+        	<input type="text" id="uname" name="uname"><br> 
+
+        	<label for="fname">Full name:</label><br> 
+        	<input type="text" id="fname" name="fname"><br> 
+
+        	<label for="bio">bio:</label><br> 
+        	<input type="text" id="bio" name="bio" maxlength="280"><br><br>
+
+        	<input class="button7" type="submit" value="Signup"> 
+        </form> 
+    </div>
+    <br> 
+    <a href="/"><button class="button6">Signin</button></a>
 </body>
 </html>

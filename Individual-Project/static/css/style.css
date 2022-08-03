@@ -1,0 +1,139 @@
+body {
+  background-color: #98C1D9;
+}
+/*add your tweet*/
+.button1 {
+  left: 45%;
+  width: 10%;
+  background-color: #6969B3; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*see your tweets*/
+.button2 {
+  left: 45%;
+  width: 10%;
+  top:200px;
+  background-color: #4B244A; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*GO HOME*/
+.button3 {
+  left: 45%;
+  width: 10%;
+  top:290px;
+  background-color: #533A7B; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*signup*/
+.button4 {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  top:295px;
+  background-color: #5670B3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*signin*/
+.button5 {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  top:230px;
+  background-color: #7E5290; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*signinup*/
+.button6 {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  top:370px;
+  background-color: #7E5290; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*signupup*/
+.button7 {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  top:310px;
+  background-color: #5670B3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*addtweet*/
+.button8 {
+  left: 45%;
+  width: 10%;
+  top:143px;
+  background-color: #5670B3; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+#h1home {
+  text-align: center;
+}
+
+.tweetsdis {
+  border: 3px solid #73AD21;
+  /*position: relative;*/
+}

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <head>
+	<link rel="stylesheet" href="./static/css/style.css">
 	<meta charset="UTF-8">
 	<title>Tweets</title>
 </head>
 <body>
-{% for tweet in tweets %}
- <li> {{tweets[tweet]["title"]}} </li>
- <li> {{tweets[tweet]["bio"]}} </li>
- <br>
-{%endfor%}
-
+	{% for tweet in tweets %}
+	<div class="tweetsdis">
+ 	<h4> {{tweets[tweet]["title"]}} </h4>
+ 	<p> {{tweets[tweet]["bio"]}} </p>
+ 	<p> {{users[tweets[tweet]["uid"]]["user_name"]}}</p>
+ 	</div>
+ 	<br>
+	{%endfor%}
+<div class="centered">
+	<br>
+	<a href="/add_tweet"><button button class="button1">Add Tweet</button></a>
+	<br>
+	<a href="/home"><button button class="button3">Go Home</button></a>
+</div>
 </body>
 </html>
